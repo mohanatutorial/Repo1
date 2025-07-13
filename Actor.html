@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Siva Karthikeyan </title>
+    </head>
+    <body bgcolor="lavender" style="color:chocolate" aria-dropeffect="move">
+        <center>
+        <style>
+            table{
+                background-color:pink;
+                height: 90px;
+                font:bold;
+                text-decoration:solid;
+                color:white;
+
+            }
+            img{
+                border-style: solid;
+                border-width: 15px;
+                border-color:black;
+            }
+            div{
+                background-color: black;
+                color:whitesmoke;
+                width:100%;
+                height:100px;
+                display: inline-block;
+                margin-top: 55px;
+                padding-top: 55px;
+                text-align: center;
+            }
+            .one,.two,.three{
+                display: inline;
+                padding-top: 65px;
+                cursor: pointer;
+                padding-left: 15px;
+                
+            }
+            #one{
+                padding-left: 100px;
+                display:inline;
+            }
+        </style>
+        <h1 style="color:blueviolet">My Favourite Actor</h1>    
+        <img src="siva.jpeg" width="250px">
+        <img src="siva2.jpg" width="250px" height="250px">
+        <img src="siva1.jpg" width="250px">
+        <br>
+        <a href="https://www.bing.com/ck/a?!&&p=293c587f8754ef889b79be5297f23a46929dc644b348aedf873ba64b9a926b83JmltdHM9MTc1MDg5NjAwMA&ptn=3&ver=2&hsh=4&fclid=23cbd291-364a-6b97-1d71-c7d837e76a4f&psq=Sivakarthikeyan&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvU2l2YWthcnRoaWtleWFu&ntb=1">About</a>
+        <hr>
+        <p>Sivakarthikeyan — The Movie Database (TMDB)
+           Sivakarthikeyan is an <strong>Indian actor, singer, film producer, lyricist, and television presenter</strong>. He was born on February 17, 1985 in Sivaganga,<strong> Tamil Nadu, India</strong>. He is a recipient of a Tamil Nadu State Film Award, four Edison Awards, four SIIMA Awards, and two other Vijay Awards. Sivakarthikeyan started off as a stand-up comedian, participated in various reality shows, hosted a few television shows and eventually grew into becoming an actor.  
+        </p>
+        <form>
+        <table border="1">
+        <tr>
+            <td>Name: <input type="text"></td>
+        </tr>
+        <tr>
+            <td>
+                Gender: Female <input type="radio" name="Gender"> 
+                Male <input type="radio" name="Gender">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            Your Favourite Actor:
+            <select id="actorSelect">
+            <option value="">Select an actor</option>
+            <option value="https://en.wikipedia.org/wiki/Kamal_Haasan">Kamal Haasan</option>
+            <option value="https://en.wikipedia.org/wiki/Vijay_(actor)">Vijay</option>
+            <option value="https://en.wikipedia.org/wiki/Ajith_Kumar">Ajith Kumar</option>
+            <option value="https://www.youtube.com/watch?v=AY3Yea6hBbI">Siva Karthikeyan</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <button type="button" id="s" onclick="change()">Submit</button>
+            <a id="one" href="Response.html">Response</a>
+            </td>
+        </tr>
+        </table>
+        </form>
+
+<script>
+    function change() {
+    var select = document.getElementById("actorSelect");
+    var wikiLink = select.value;
+    
+    if (wikiLink) {
+      window.open(wikiLink, "_blank"); 
+    } 
+    else {
+      alert("Please select an actor.");
+    }
+    }
+    
+    function colortext(event){
+        document.querySelector(".one").style.color="pink"
+        document.querySelector(".two").style.color="blue"
+        document.querySelector(".three").style.color="green"
+    }
+</script>
+        <div>
+           
+            <p class="one" onpointerenter="colortext(event)">ABOUT US|</p>
+            <p class="two" onpointerenter="colortext(event)">CONTACT:9145789687|</p>
+            <P class="three" onpointerenter="colortext(event)">EMAIL:martini244@gamil.com</P>
+          
+        </div>
+        </center>
+    </body>
+</html>
+
